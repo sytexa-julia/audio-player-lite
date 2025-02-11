@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A302117C1060B0D000CEA9C3 /* XSPlaylistItemMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = A302117B1060B0D000CEA9C3 /* XSPlaylistItemMetaData.m */; };
+		A32CF3DD0FD0DA58005FA5F1 /* XSManageFavoritesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32CF3DC0FD0DA58005FA5F1 /* XSManageFavoritesController.m */; };
+		A33887950FDAE9950044D9AF /* AppearancePref.icns in Resources */ = {isa = PBXBuildFile; fileRef = A33887930FDAE9950044D9AF /* AppearancePref.icns */; };
+		A33887960FDAE9950044D9AF /* SoundPref.icns in Resources */ = {isa = PBXBuildFile; fileRef = A33887940FDAE9950044D9AF /* SoundPref.icns */; };
+		A3580135105DA9550044FDCF /* XSAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = A3580134105DA9550044FDCF /* XSAudio.m */; };
+		A3591A22105DB158007C25A4 /* XSPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = A3591A21105DB158007C25A4 /* XSPlaylist.m */; };
+		A35D1FE613F1F24700198ADC /* libbass.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A35D1FE513F1F24700198ADC /* libbass.dylib */; };
+		A35D1FE913F1F26700198ADC /* libbass.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A35D1FE713F1F26700198ADC /* libbass.dylib */; };
+		A35D1FEA13F1F26700198ADC /* libbassmix.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A35D1FE813F1F26700198ADC /* libbassmix.dylib */; };
+		A39DFE510FC8BAFA00D12076 /* XSGeneralPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39DFE500FC8BAFA00D12076 /* XSGeneralPreferences.xib */; };
+		A39DFE550FC8BDC400D12076 /* XSAudioPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39DFE540FC8BDC400D12076 /* XSAudioPreferences.xib */; };
+		A39DFE590FC8BE3400D12076 /* XSAppearancePreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39DFE580FC8BE3400D12076 /* XSAppearancePreferences.xib */; };
+		A39DFEAC0FC8C0BA00D12076 /* MBPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A39DFE4A0FC8B6CC00D12076 /* MBPreferencesController.m */; };
+		A39DFEE80FC902DC00D12076 /* XSMainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A39DFEE70FC902DC00D12076 /* XSMainMenuController.m */; };
+		A39DFF500FC9E8AF00D12076 /* XSAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = A39DFF4F0FC9E8AF00D12076 /* XSAboutController.m */; };
+		A39DFFF10FCA157800D12076 /* xapl48.png in Resources */ = {isa = PBXBuildFile; fileRef = A39DFFEF0FCA157800D12076 /* xapl48.png */; };
+		A3CC2D1A0FC504C100FDEA68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CC2D190FC504C100FDEA68 /* main.m */; };
+		A3CC2D280FC504EB00FDEA68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3CC2D250FC504EB00FDEA68 /* InfoPlist.strings */; };
+		A3D4A25A0FDC5DD5009B4E06 /* XSAboutXapl.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D4A2580FDC5DD5009B4E06 /* XSAboutXapl.xib */; };
+		A3D4A2EA0FDC7155009B4E06 /* XSXaplWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D4A2E90FDC7155009B4E06 /* XSXaplWindow.m */; };
+		A3D4A3350FDC74E9009B4E06 /* XSFileProperties.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D4A3330FDC74E9009B4E06 /* XSFileProperties.xib */; };
+		A3D4A33A0FDC753C009B4E06 /* XSFilePropertiesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D4A3390FDC753C009B4E06 /* XSFilePropertiesController.m */; };
+		A3D874950FE208DB000C319C /* XplPlaylistHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D874940FE208DB000C319C /* XplPlaylistHelper.m */; };
+		A3D874980FE20964000C319C /* XplTextPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D874970FE20964000C319C /* XplTextPlaylist.m */; };
+		A3DA2A480FD1FCF500CC3F3F /* XplM3UPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DA2A470FD1FCF500CC3F3F /* XplM3UPlaylist.m */; };
+		A3DA2A4A0FD1FE1200CC3F3F /* XplData.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DA2A490FD1FE1200CC3F3F /* XplData.m */; };
+		A3DA2A630FD2246100CC3F3F /* XplPLSPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DA2A620FD2246100CC3F3F /* XplPLSPlaylist.m */; };
+		A3DADAAC0FE0D29F00F72638 /* XSManageFavorites.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DADAAA0FE0D29F00F72638 /* XSManageFavorites.xib */; };
+		A3DC5E5B0FC7B1A2008A4C8D /* XSGeneralPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DC5E5A0FC7B1A2008A4C8D /* XSGeneralPreferences.m */; };
+		A3DC5E630FC7B685008A4C8D /* XSAppearancePreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DC5E600FC7B685008A4C8D /* XSAppearancePreferences.m */; };
+		A3DC5E640FC7B685008A4C8D /* XSAudioPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DC5E620FC7B685008A4C8D /* XSAudioPreferences.m */; };
+		A3DD24F80FD8D979000C40FD /* XSXaplDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DD24F70FD8D979000C40FD /* XSXaplDocument.m */; };
+		A3DD24FA0FD8D9A2000C40FD /* XSXaplDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DD24F90FD8D9A2000C40FD /* XSXaplDocument.xib */; };
+		A3DD25410FD8DE89000C40FD /* XSMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DD25400FD8DE89000C40FD /* XSMainMenu.xib */; };
+		A3E721010FC64C1B00FF75CD /* xaplApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = A3E721000FC64C1B00FF75CD /* xaplApp.icns */; };
+		A3E7210A0FC64DEB00FF75CD /* taglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E721090FC64DEB00FF75CD /* taglib.framework */; };
+		A3E721480FC64DF000FF75CD /* taglib.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A3E721090FC64DEB00FF75CD /* taglib.framework */; };
+		A3ECC81B0FCF877600EDF3C0 /* xAudioInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ECC81A0FCF877600EDF3C0 /* xAudioInterface.m */; };
+		A3FD6F6E0FCCF83300744FF5 /* media-playback-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FD6F690FCCF83300744FF5 /* media-playback-stop.png */; };
+		A3FD6F6F0FCCF83300744FF5 /* media-playback-start.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FD6F6A0FCCF83300744FF5 /* media-playback-start.png */; };
+		A3FD6F700FCCF83300744FF5 /* media-skip-forward.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FD6F6B0FCCF83300744FF5 /* media-skip-forward.png */; };
+		A3FD6F710FCCF83300744FF5 /* media-skip-backward.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FD6F6C0FCCF83300744FF5 /* media-skip-backward.png */; };
+		A3FD6F720FCCF83300744FF5 /* media-playback-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FD6F6D0FCCF83300744FF5 /* media-playback-pause.png */; };
+		A3FEE8D10FD4DA6600EBC800 /* XSPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEE8D00FD4DA6600EBC800 /* XSPlaylistItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3E720FE0FC649F500FF75CD /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3E721480FC64DF000FF75CD /* taglib.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E721580FC64F7500FF75CD /* Copy Dylibs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			name = "Copy Dylibs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Xapl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xapl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A302117A1060B0D000CEA9C3 /* XSPlaylistItemMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSPlaylistItemMetaData.h; path = ../../src/macos/XSPlaylistItemMetaData.h; sourceTree = SOURCE_ROOT; };
+		A302117B1060B0D000CEA9C3 /* XSPlaylistItemMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSPlaylistItemMetaData.m; path = ../../src/macos/XSPlaylistItemMetaData.m; sourceTree = SOURCE_ROOT; };
+		A32CF3DB0FD0DA58005FA5F1 /* XSManageFavoritesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSManageFavoritesController.h; path = ../../src/macos/XSManageFavoritesController.h; sourceTree = SOURCE_ROOT; };
+		A32CF3DC0FD0DA58005FA5F1 /* XSManageFavoritesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSManageFavoritesController.m; path = ../../src/macos/XSManageFavoritesController.m; sourceTree = SOURCE_ROOT; };
+		A33887930FDAE9950044D9AF /* AppearancePref.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AppearancePref.icns; path = ../../art/AppearancePref.icns; sourceTree = SOURCE_ROOT; };
+		A33887940FDAE9950044D9AF /* SoundPref.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = SoundPref.icns; path = ../../art/SoundPref.icns; sourceTree = SOURCE_ROOT; };
+		A34E20780FEF53B200E9F6D8 /* XplData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XplData.h; path = ../../src/common/xPlaylistLib/XplData.h; sourceTree = SOURCE_ROOT; };
+		A34E20790FEF53B200E9F6D8 /* XplPlaylistHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XplPlaylistHelper.h; path = ../../src/common/xPlaylistLib/XplPlaylistHelper.h; sourceTree = SOURCE_ROOT; };
+		A3580133105DA9550044FDCF /* XSAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSAudio.h; path = ../../src/macos/XSAudio.h; sourceTree = SOURCE_ROOT; };
+		A3580134105DA9550044FDCF /* XSAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSAudio.m; path = ../../src/macos/XSAudio.m; sourceTree = SOURCE_ROOT; };
+		A3591A20105DB158007C25A4 /* XSPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSPlaylist.h; path = ../../src/macos/XSPlaylist.h; sourceTree = SOURCE_ROOT; };
+		A3591A21105DB158007C25A4 /* XSPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSPlaylist.m; path = ../../src/macos/XSPlaylist.m; sourceTree = SOURCE_ROOT; };
+		A35D1FE513F1F24700198ADC /* libbass.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbass.dylib; path = ../../lib/macos/x64/libbass.dylib; sourceTree = "<group>"; };
+		A35D1FE713F1F26700198ADC /* libbass.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbass.dylib; path = ../../lib/macos/x86/libbass.dylib; sourceTree = "<group>"; };
+		A35D1FE813F1F26700198ADC /* libbassmix.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbassmix.dylib; path = ../../lib/macos/x86/libbassmix.dylib; sourceTree = "<group>"; };
+		A39DFE490FC8B6CC00D12076 /* MBPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBPreferencesController.h; path = ../../src/macos/MBPreferencesController.h; sourceTree = "<group>"; };
+		A39DFE4A0FC8B6CC00D12076 /* MBPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBPreferencesController.m; path = ../../src/macos/MBPreferencesController.m; sourceTree = "<group>"; };
+		A39DFE500FC8BAFA00D12076 /* XSGeneralPreferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = XSGeneralPreferences.xib; path = ../../src/macos/English.lproj/XSGeneralPreferences.xib; sourceTree = SOURCE_ROOT; };
+		A39DFE540FC8BDC400D12076 /* XSAudioPreferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = XSAudioPreferences.xib; path = ../../src/macos/English.lproj/XSAudioPreferences.xib; sourceTree = "<group>"; };
+		A39DFE580FC8BE3400D12076 /* XSAppearancePreferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = XSAppearancePreferences.xib; path = ../../src/macos/English.lproj/XSAppearancePreferences.xib; sourceTree = "<group>"; };
+		A39DFEE60FC902DC00D12076 /* XSMainMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSMainMenuController.h; path = ../../src/macos/XSMainMenuController.h; sourceTree = SOURCE_ROOT; };
+		A39DFEE70FC902DC00D12076 /* XSMainMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSMainMenuController.m; path = ../../src/macos/XSMainMenuController.m; sourceTree = SOURCE_ROOT; };
+		A39DFF4E0FC9E8AF00D12076 /* XSAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSAboutController.h; path = ../../src/macos/XSAboutController.h; sourceTree = SOURCE_ROOT; };
+		A39DFF4F0FC9E8AF00D12076 /* XSAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSAboutController.m; path = ../../src/macos/XSAboutController.m; sourceTree = SOURCE_ROOT; };
+		A39DFFEF0FCA157800D12076 /* xapl48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xapl48.png; path = ../../art/xapl48.png; sourceTree = "<group>"; };
+		A3CC2D190FC504C100FDEA68 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../src/macos/main.m; sourceTree = SOURCE_ROOT; };
+		A3CC2D260FC504EB00FDEA68 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = ../../src/macos/English.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		A3D4A2590FDC5DD5009B4E06 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = ../../src/macos/English.lproj/XSAboutXapl.xib; sourceTree = SOURCE_ROOT; };
+		A3D4A2E80FDC7155009B4E06 /* XSXaplWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSXaplWindow.h; path = ../../src/macos/XSXaplWindow.h; sourceTree = SOURCE_ROOT; };
+		A3D4A2E90FDC7155009B4E06 /* XSXaplWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSXaplWindow.m; path = ../../src/macos/XSXaplWindow.m; sourceTree = SOURCE_ROOT; };
+		A3D4A3340FDC74E9009B4E06 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = ../../src/macos/English.lproj/XSFileProperties.xib; sourceTree = SOURCE_ROOT; };
+		A3D4A3380FDC753C009B4E06 /* XSFilePropertiesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSFilePropertiesController.h; path = ../../src/macos/XSFilePropertiesController.h; sourceTree = SOURCE_ROOT; };
+		A3D4A3390FDC753C009B4E06 /* XSFilePropertiesController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = XSFilePropertiesController.m; path = ../../src/macos/XSFilePropertiesController.m; sourceTree = SOURCE_ROOT; };
+		A3D874940FE208DB000C319C /* XplPlaylistHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XplPlaylistHelper.m; path = ../../src/common/xPlaylistLib/XplPlaylistHelper.m; sourceTree = SOURCE_ROOT; };
+		A3D874960FE20964000C319C /* XplTextPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XplTextPlaylist.h; path = ../../src/common/xPlaylistLib/XplTextPlaylist.h; sourceTree = SOURCE_ROOT; };
+		A3D874970FE20964000C319C /* XplTextPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XplTextPlaylist.m; path = ../../src/common/xPlaylistLib/XplTextPlaylist.m; sourceTree = SOURCE_ROOT; };
+		A3DA2A440FD1F84300CC3F3F /* XplM3UPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XplM3UPlaylist.h; path = ../../src/common/xPlaylistLib/XplM3UPlaylist.h; sourceTree = SOURCE_ROOT; };
+		A3DA2A450FD1F84300CC3F3F /* XplPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XplPlaylist.h; path = ../../src/common/xPlaylistLib/XplPlaylist.h; sourceTree = SOURCE_ROOT; };
+		A3DA2A470FD1FCF500CC3F3F /* XplM3UPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XplM3UPlaylist.m; path = ../../src/common/xPlaylistLib/XplM3UPlaylist.m; sourceTree = SOURCE_ROOT; };
+		A3DA2A490FD1FE1200CC3F3F /* XplData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XplData.m; path = ../../src/common/xPlaylistLib/XplData.m; sourceTree = SOURCE_ROOT; };
+		A3DA2A610FD2246100CC3F3F /* XplPLSPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XplPLSPlaylist.h; path = ../../src/common/xPlaylistLib/XplPLSPlaylist.h; sourceTree = SOURCE_ROOT; };
+		A3DA2A620FD2246100CC3F3F /* XplPLSPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XplPLSPlaylist.m; path = ../../src/common/xPlaylistLib/XplPLSPlaylist.m; sourceTree = SOURCE_ROOT; };
+		A3DADAAB0FE0D29F00F72638 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = ../../src/macos/English.lproj/XSManageFavorites.xib; sourceTree = SOURCE_ROOT; };
+		A3DC5E590FC7B1A2008A4C8D /* XSGeneralPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSGeneralPreferences.h; path = ../../src/macos/XSGeneralPreferences.h; sourceTree = SOURCE_ROOT; };
+		A3DC5E5A0FC7B1A2008A4C8D /* XSGeneralPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSGeneralPreferences.m; path = ../../src/macos/XSGeneralPreferences.m; sourceTree = SOURCE_ROOT; };
+		A3DC5E5F0FC7B685008A4C8D /* XSAppearancePreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSAppearancePreferences.h; path = ../../src/macos/XSAppearancePreferences.h; sourceTree = SOURCE_ROOT; };
+		A3DC5E600FC7B685008A4C8D /* XSAppearancePreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSAppearancePreferences.m; path = ../../src/macos/XSAppearancePreferences.m; sourceTree = SOURCE_ROOT; };
+		A3DC5E610FC7B685008A4C8D /* XSAudioPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSAudioPreferences.h; path = ../../src/macos/XSAudioPreferences.h; sourceTree = SOURCE_ROOT; };
+		A3DC5E620FC7B685008A4C8D /* XSAudioPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSAudioPreferences.m; path = ../../src/macos/XSAudioPreferences.m; sourceTree = SOURCE_ROOT; };
+		A3DD24F60FD8D979000C40FD /* XSXaplDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSXaplDocument.h; path = ../../src/macos/XSXaplDocument.h; sourceTree = SOURCE_ROOT; };
+		A3DD24F70FD8D979000C40FD /* XSXaplDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSXaplDocument.m; path = ../../src/macos/XSXaplDocument.m; sourceTree = SOURCE_ROOT; };
+		A3DD24F90FD8D9A2000C40FD /* XSXaplDocument.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = XSXaplDocument.xib; path = ../../src/macos/English.lproj/XSXaplDocument.xib; sourceTree = "<group>"; };
+		A3DD25400FD8DE89000C40FD /* XSMainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = XSMainMenu.xib; path = ../../src/macos/English.lproj/XSMainMenu.xib; sourceTree = SOURCE_ROOT; };
+		A3E721000FC64C1B00FF75CD /* xaplApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = xaplApp.icns; path = ../../art/xaplApp.icns; sourceTree = SOURCE_ROOT; };
+		A3E721090FC64DEB00FF75CD /* taglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = taglib.framework; path = ../../lib/macos/taglib.framework; sourceTree = SOURCE_ROOT; };
+		A3ECC8180FCF7E4E00EDF3C0 /* xaiChannelEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xaiChannelEventListener.h; path = ../../src/common/xAudioInterface/xaiChannelEventListener.h; sourceTree = SOURCE_ROOT; };
+		A3ECC8190FCF7E4E00EDF3C0 /* xAudioInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xAudioInterface.h; path = ../../src/common/xAudioInterface/xAudioInterface.h; sourceTree = SOURCE_ROOT; };
+		A3ECC81A0FCF877600EDF3C0 /* xAudioInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = xAudioInterface.m; path = ../../src/common/xAudioInterface/xAudioInterface.m; sourceTree = SOURCE_ROOT; };
+		A3FD6F690FCCF83300744FF5 /* media-playback-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "media-playback-stop.png"; path = "../../art/media-playback-stop.png"; sourceTree = SOURCE_ROOT; };
+		A3FD6F6A0FCCF83300744FF5 /* media-playback-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "media-playback-start.png"; path = "../../art/media-playback-start.png"; sourceTree = SOURCE_ROOT; };
+		A3FD6F6B0FCCF83300744FF5 /* media-skip-forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "media-skip-forward.png"; path = "../../art/media-skip-forward.png"; sourceTree = SOURCE_ROOT; };
+		A3FD6F6C0FCCF83300744FF5 /* media-skip-backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "media-skip-backward.png"; path = "../../art/media-skip-backward.png"; sourceTree = SOURCE_ROOT; };
+		A3FD6F6D0FCCF83300744FF5 /* media-playback-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "media-playback-pause.png"; path = "../../art/media-playback-pause.png"; sourceTree = SOURCE_ROOT; };
+		A3FEE8CF0FD4DA6600EBC800 /* XSPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSPlaylistItem.h; path = ../../src/macos/XSPlaylistItem.h; sourceTree = SOURCE_ROOT; };
+		A3FEE8D00FD4DA6600EBC800 /* XSPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSPlaylistItem.m; path = ../../src/macos/XSPlaylistItem.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				A3E7210A0FC64DEB00FF75CD /* taglib.framework in Frameworks */,
+				A35D1FE613F1F24700198ADC /* libbass.dylib in Frameworks */,
+				A35D1FE913F1F26700198ADC /* libbass.dylib in Frameworks */,
+				A35D1FEA13F1F26700198ADC /* libbassmix.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A3D874AC0FE20E29000C319C /* Models */,
+				A3DC5DFA0FC7826A008A4C8D /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Xapl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Xapl */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Xapl;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A3DA2A410FD1F7F600CC3F3F /* Playlist Library */,
+				A3ECC8120FCF7E3A00EDF3C0 /* Audio Interface */,
+				A3CC2D190FC504C100FDEA68 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3DC5E4F0FC7853F008A4C8D /* icons */,
+				A3DC5E4E0FC7852B008A4C8D /* xib */,
+				A3CC2D250FC504EB00FDEA68 /* InfoPlist.strings */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A35D1FE713F1F26700198ADC /* libbass.dylib */,
+				A35D1FE813F1F26700198ADC /* libbassmix.dylib */,
+				A35D1FE513F1F24700198ADC /* libbass.dylib */,
+				A3E721090FC64DEB00FF75CD /* taglib.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3D874AC0FE20E29000C319C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEE8CF0FD4DA6600EBC800 /* XSPlaylistItem.h */,
+				A3FEE8D00FD4DA6600EBC800 /* XSPlaylistItem.m */,
+				A3DD24F60FD8D979000C40FD /* XSXaplDocument.h */,
+				A3DD24F70FD8D979000C40FD /* XSXaplDocument.m */,
+				A3591A20105DB158007C25A4 /* XSPlaylist.h */,
+				A3591A21105DB158007C25A4 /* XSPlaylist.m */,
+				A302117A1060B0D000CEA9C3 /* XSPlaylistItemMetaData.h */,
+				A302117B1060B0D000CEA9C3 /* XSPlaylistItemMetaData.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A3DA2A410FD1F7F600CC3F3F /* Playlist Library */ = {
+			isa = PBXGroup;
+			children = (
+				A34E20780FEF53B200E9F6D8 /* XplData.h */,
+				A34E20790FEF53B200E9F6D8 /* XplPlaylistHelper.h */,
+				A3DA2A440FD1F84300CC3F3F /* XplM3UPlaylist.h */,
+				A3DA2A450FD1F84300CC3F3F /* XplPlaylist.h */,
+				A3DA2A470FD1FCF500CC3F3F /* XplM3UPlaylist.m */,
+				A3DA2A490FD1FE1200CC3F3F /* XplData.m */,
+				A3DA2A610FD2246100CC3F3F /* XplPLSPlaylist.h */,
+				A3DA2A620FD2246100CC3F3F /* XplPLSPlaylist.m */,
+				A3D874940FE208DB000C319C /* XplPlaylistHelper.m */,
+				A3D874960FE20964000C319C /* XplTextPlaylist.h */,
+				A3D874970FE20964000C319C /* XplTextPlaylist.m */,
+			);
+			name = "Playlist Library";
+			sourceTree = "<group>";
+		};
+		A3DC5DFA0FC7826A008A4C8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A39DFF4E0FC9E8AF00D12076 /* XSAboutController.h */,
+				A39DFF4F0FC9E8AF00D12076 /* XSAboutController.m */,
+				A39DFEE60FC902DC00D12076 /* XSMainMenuController.h */,
+				A39DFEE70FC902DC00D12076 /* XSMainMenuController.m */,
+				A39DFE490FC8B6CC00D12076 /* MBPreferencesController.h */,
+				A39DFE4A0FC8B6CC00D12076 /* MBPreferencesController.m */,
+				A3DC5E5F0FC7B685008A4C8D /* XSAppearancePreferences.h */,
+				A3DC5E600FC7B685008A4C8D /* XSAppearancePreferences.m */,
+				A3DC5E610FC7B685008A4C8D /* XSAudioPreferences.h */,
+				A3DC5E620FC7B685008A4C8D /* XSAudioPreferences.m */,
+				A3DC5E590FC7B1A2008A4C8D /* XSGeneralPreferences.h */,
+				A3DC5E5A0FC7B1A2008A4C8D /* XSGeneralPreferences.m */,
+				A32CF3DB0FD0DA58005FA5F1 /* XSManageFavoritesController.h */,
+				A32CF3DC0FD0DA58005FA5F1 /* XSManageFavoritesController.m */,
+				A3D4A2E80FDC7155009B4E06 /* XSXaplWindow.h */,
+				A3D4A2E90FDC7155009B4E06 /* XSXaplWindow.m */,
+				A3D4A3380FDC753C009B4E06 /* XSFilePropertiesController.h */,
+				A3D4A3390FDC753C009B4E06 /* XSFilePropertiesController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A3DC5E4E0FC7852B008A4C8D /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				A3DD24F90FD8D9A2000C40FD /* XSXaplDocument.xib */,
+				A3DD25400FD8DE89000C40FD /* XSMainMenu.xib */,
+				A39DFE500FC8BAFA00D12076 /* XSGeneralPreferences.xib */,
+				A39DFE540FC8BDC400D12076 /* XSAudioPreferences.xib */,
+				A39DFE580FC8BE3400D12076 /* XSAppearancePreferences.xib */,
+				A3D4A2580FDC5DD5009B4E06 /* XSAboutXapl.xib */,
+				A3D4A3330FDC74E9009B4E06 /* XSFileProperties.xib */,
+				A3DADAAA0FE0D29F00F72638 /* XSManageFavorites.xib */,
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		A3DC5E4F0FC7853F008A4C8D /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				A33887930FDAE9950044D9AF /* AppearancePref.icns */,
+				A33887940FDAE9950044D9AF /* SoundPref.icns */,
+				A3FD6F690FCCF83300744FF5 /* media-playback-stop.png */,
+				A3FD6F6A0FCCF83300744FF5 /* media-playback-start.png */,
+				A3FD6F6B0FCCF83300744FF5 /* media-skip-forward.png */,
+				A3FD6F6C0FCCF83300744FF5 /* media-skip-backward.png */,
+				A3FD6F6D0FCCF83300744FF5 /* media-playback-pause.png */,
+				A39DFFEF0FCA157800D12076 /* xapl48.png */,
+				A3E721000FC64C1B00FF75CD /* xaplApp.icns */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		A3ECC8120FCF7E3A00EDF3C0 /* Audio Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A3ECC8180FCF7E4E00EDF3C0 /* xaiChannelEventListener.h */,
+				A3ECC8190FCF7E4E00EDF3C0 /* xAudioInterface.h */,
+				A3ECC81A0FCF877600EDF3C0 /* xAudioInterface.m */,
+				A3580133105DA9550044FDCF /* XSAudio.h */,
+				A3580134105DA9550044FDCF /* XSAudio.m */,
+			);
+			name = "Audio Interface";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Xapl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Xapl" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				A3E720FE0FC649F500FF75CD /* Copy Frameworks */,
+				A3E721580FC64F7500FF75CD /* Copy Dylibs */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Xapl;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Xapl;
+			productReference = 8D1107320486CEB800E47090 /* Xapl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Xapl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Xapl */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Xapl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CC2D280FC504EB00FDEA68 /* InfoPlist.strings in Resources */,
+				A3E721010FC64C1B00FF75CD /* xaplApp.icns in Resources */,
+				A39DFE510FC8BAFA00D12076 /* XSGeneralPreferences.xib in Resources */,
+				A39DFE550FC8BDC400D12076 /* XSAudioPreferences.xib in Resources */,
+				A39DFE590FC8BE3400D12076 /* XSAppearancePreferences.xib in Resources */,
+				A39DFFF10FCA157800D12076 /* xapl48.png in Resources */,
+				A3FD6F6E0FCCF83300744FF5 /* media-playback-stop.png in Resources */,
+				A3FD6F6F0FCCF83300744FF5 /* media-playback-start.png in Resources */,
+				A3FD6F700FCCF83300744FF5 /* media-skip-forward.png in Resources */,
+				A3FD6F710FCCF83300744FF5 /* media-skip-backward.png in Resources */,
+				A3FD6F720FCCF83300744FF5 /* media-playback-pause.png in Resources */,
+				A3DD24FA0FD8D9A2000C40FD /* XSXaplDocument.xib in Resources */,
+				A3DD25410FD8DE89000C40FD /* XSMainMenu.xib in Resources */,
+				A33887950FDAE9950044D9AF /* AppearancePref.icns in Resources */,
+				A33887960FDAE9950044D9AF /* SoundPref.icns in Resources */,
+				A3D4A25A0FDC5DD5009B4E06 /* XSAboutXapl.xib in Resources */,
+				A3D4A3350FDC74E9009B4E06 /* XSFileProperties.xib in Resources */,
+				A3DADAAC0FE0D29F00F72638 /* XSManageFavorites.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39DFEAC0FC8C0BA00D12076 /* MBPreferencesController.m in Sources */,
+				A3CC2D1A0FC504C100FDEA68 /* main.m in Sources */,
+				A3DC5E5B0FC7B1A2008A4C8D /* XSGeneralPreferences.m in Sources */,
+				A3DC5E630FC7B685008A4C8D /* XSAppearancePreferences.m in Sources */,
+				A3DC5E640FC7B685008A4C8D /* XSAudioPreferences.m in Sources */,
+				A39DFEE80FC902DC00D12076 /* XSMainMenuController.m in Sources */,
+				A39DFF500FC9E8AF00D12076 /* XSAboutController.m in Sources */,
+				A3ECC81B0FCF877600EDF3C0 /* xAudioInterface.m in Sources */,
+				A32CF3DD0FD0DA58005FA5F1 /* XSManageFavoritesController.m in Sources */,
+				A3DA2A480FD1FCF500CC3F3F /* XplM3UPlaylist.m in Sources */,
+				A3DA2A4A0FD1FE1200CC3F3F /* XplData.m in Sources */,
+				A3DA2A630FD2246100CC3F3F /* XplPLSPlaylist.m in Sources */,
+				A3FEE8D10FD4DA6600EBC800 /* XSPlaylistItem.m in Sources */,
+				A3DD24F80FD8D979000C40FD /* XSXaplDocument.m in Sources */,
+				A3D4A2EA0FDC7155009B4E06 /* XSXaplWindow.m in Sources */,
+				A3D4A33A0FDC753C009B4E06 /* XSFilePropertiesController.m in Sources */,
+				A3D874950FE208DB000C319C /* XplPlaylistHelper.m in Sources */,
+				A3D874980FE20964000C319C /* XplTextPlaylist.m in Sources */,
+				A3580135105DA9550044FDCF /* XSAudio.m in Sources */,
+				A3591A22105DB158007C25A4 /* XSPlaylist.m in Sources */,
+				A302117C1060B0D000CEA9C3 /* XSPlaylistItemMetaData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3CC2D250FC504EB00FDEA68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3CC2D260FC504EB00FDEA68 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A3D4A2580FDC5DD5009B4E06 /* XSAboutXapl.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3D4A2590FDC5DD5009B4E06 /* English */,
+			);
+			name = XSAboutXapl.xib;
+			sourceTree = "<group>";
+		};
+		A3D4A3330FDC74E9009B4E06 /* XSFileProperties.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3D4A3340FDC74E9009B4E06 /* English */,
+			);
+			name = XSFileProperties.xib;
+			sourceTree = "<group>";
+		};
+		A3DADAAA0FE0D29F00F72638 /* XSManageFavorites.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3DADAAB0FE0D29F00F72638 /* English */,
+			);
+			name = XSManageFavorites.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/macos\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../src/macos/Xapl_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/macos\"",
+					"\"$(SRCROOT)/../../lib/macos/x64\"",
+					"\"$(SRCROOT)/../../lib/macos/x86\"",
+				);
+				PRODUCT_NAME = Xapl;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/macos\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../src/macos/Xapl_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/macos\"",
+					"\"$(SRCROOT)/../../lib/macos/x64\"",
+					"\"$(SRCROOT)/../../lib/macos/x86\"",
+				);
+				PRODUCT_NAME = Xapl;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = ../../bin/macos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+				SYMROOT = ../../bin/macos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Xapl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Xapl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
